@@ -1,0 +1,83 @@
+/* Cute Theme for Virtual Pet */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #FFB6C1; /* Initial soft pink color */
+  color: #6B4E71;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  animation: rainbowBackground 15s ease-in-out infinite; /* Smooth transition through one color at a time */
+}
+
+/* Rainbow Background Animation */
+@keyframes rainbowBackground {
+  0% { background-color: #FFB6C1; }    /* Soft Pink */
+  14% { background-color: #FFD700; }   /* Yellow */
+  28% { background-color: #98FB98; }   /* Light Green */
+  42% { background-color: #ADD8E6; }   /* Light Blue */
+  57% { background-color: #DDA0DD; }   /* Lavender */
+  71% { background-color: #FF69B4; }   /* Hot Pink */
+  85% { background-color: #FF6347; }   /* Tomato Red */
+  100% { background-color: #FFB6C1; }  /* Back to Soft Pink */
+}
+
+/* Pet Container Styling */
+#pet-container {
+  margin-top: 50px;
+  background: rgba(255, 230, 230, 0.9); /* Soft pink with a bit of transparency */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
+h1 {
+  font-size: 28px;
+  color: #FF7096;
+}
+
+#pet {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #FF7096;
+  background: white;
+  padding: 10px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #FFB6C1;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #FF7096;
+  transform: scale(1.05);
+}
+
+#pet-container p {
+  font-size: 20px;
+  font-weight: bold;
+  background: #FFF5E1;
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* Ball Styling */
+#ball {
+  width: 30px;
+  height: 30px;
+  background: #FF9AA2; /* Soft pinkish color for the ball */
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+}

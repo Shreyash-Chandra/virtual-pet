@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Pet - Mini Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="game">
+    <p id="score">Score: 0</p>
+    <div id="ball" onclick="catchBall()"></div>
+  </div>
+  
+  <div id="pet-container">
+    <h2 id="status">Your pet is happy!</h2>
+    <img id="pet" src="cat.webp" width="200px" alt="Shro">
+    
+    <div>
+        <button onclick="changeCatAction('feed')">Feed 🍗</button>
+        <button onclick="changeCatAction('play')">Play 🎾</button>
+        <button onclick="changeCatAction('clean')">Clean 🛁</button>
+        <button onclick="changeCatAction('sleep')">Sleep 😴</button>
+    </div>
+  </div>
+
+  <div id="mini-games">
+    <h2>Mini Games</h2>
+    <button onclick="window.location.href='simon.html'">Play Simon Game</button>
+    <button onclick="window.location.href='catch-the-cat.html'">Catch the Cat</button>
+    <button onclick="window.location.href='tic-tac-toe.html'">Tic-Tac-Toe</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
